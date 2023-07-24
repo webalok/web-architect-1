@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import axios from "axios";
-export default function Dashboard() {
+export default function useMemoExample() {
 
 	const [apiData, setApiData] = useState([]);
 

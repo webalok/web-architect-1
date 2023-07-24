@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Login from './AdminPages/Login';
 import Dashboard from './AdminPages/Dashboard';
+import UseCallbackExample from './PracticeComponents/useCallback-example';
 
 function App() {
 	const [isUserLogin, setisUserLogin] = useState(false);
@@ -12,7 +13,8 @@ function App() {
 	return (
 		<>
 				<Routes>
-					<Route path="/" element={<Dashboard />} />
+					<Route path="/" element={<UseCallbackExample />} />
+					<Route path="/dashboard" element={<Dashboard />} />
 					<Route path="/dashboard" element={<Dashboard />} />
 					{/* <Route path="/profile/:username" element={<Profile />} />
 					<Route path="*" element={<NotFound />} /> */}
